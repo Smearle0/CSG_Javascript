@@ -1,5 +1,5 @@
 var xJOS = 225;
-var yJOS = 75;
+var yJOS = 225;
 
 function setup() {
   canvas = createCanvas(450,450);
@@ -15,11 +15,11 @@ function draw() {
   text("x = " + round(xJOS),10,20);
   tekenJos(xJOS,yJOS);
 }
-
+figure
 function tekenJos(x,y) {
   push();
   translate(x,y);
-  scale(1); 
+  scale(5); 
   noStroke();
   fill('indianred');
   ellipse(0,0,50);
